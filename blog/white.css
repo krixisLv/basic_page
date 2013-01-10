@@ -1,0 +1,27 @@
+iframe{
+	position:relative:
+	left:-400px;
+	width:1040px;
+	height:900px;
+	-webkit-transform: scale(0.60);
+    -webkit-transform-origin: 0 0;
+}
+#middle article h2>a{
+	color:#888;
+}
+#middle article h2>a:hover{
+	color:#111;
+}
+#middle article div{
+	position:relative;
+	top:-320px;
+	font-size:80%;
+	margin-bottom:-300px;
+	padding-bottom:-300px;
+}
+#middle li{
+	margin-left:25px;
+}
+li>ul>li{
+	margin-left:35px;
+}

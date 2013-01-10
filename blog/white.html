@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Krixos.com</title>
+	<link rel="stylesheet" type="text/css" href="../style.css" />
+	<link rel="stylesheet" type="text/css" href="../head.css" />
+	<link rel="stylesheet" type="text/css" href="white.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="../print.css" />
+</head>
+<body>
+	<div id="OverHead"></div>
+	<div id="content">
+		<header id="head">
+			<div id="gears">
+				<img id="gear1" src="../images/gear1.png" alt="gear"/>
+				<img id="gear2" src="../images/gear2.png" alt="gear"/>
+				<img id="gear3" src="../images/gear3.png" alt="gear"/>
+			</div>
+			<a href="index.html"><img id="logo" src="../images/logo.png" alt="logo"/></a>
+			<nav>
+				<ul id="mainmenu">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../blog.html">Blog</a></li>
+					<li><a href="../gallery.html">Gallery</a></li>
+					<li><a href="../graph.html">Graphs</a></li>
+					<li><a href="../whoiam.html">Who?</a></li>
+					<li><a href="../contact.html">Contacts</a></li>
+				</ul>
+			</nav>
+			<div id="SocialShare">
+				<img class="social" src="../images/facebook2.png" alt="facebook"/>
+				<img class="social" src="../images/twitter2.png" alt="twitter"/>
+				<img class="social" src="../images/google2.png" alt="google"/>
+				<img class="social" src="../images/reddit2.png" alt="reddit"/>
+				<a href="JavaScript:window.print();"><img class="social" src="../images/print.png" alt="printer"></a>
+			</div>
+		</header>
+		<div id="middle">
+			<article>
+				<h2><a href="WhiteCollar.html">View full page</a></h2>
+				<iframe src="WhiteCollar.html"></iframe>
+				<div id="description">
+				<h2>Design breakdown</h2>
+					<h3>General rules:</h3>
+					<ul>
+						<li>Background color of the document is #222;</li>
+						<li>Text color of the document is white;</li>
+						<li>Text size of the document document text is 12px</li>
+						<li>150% line height should be used</li>
+						<li>Regular text in the document is either Verdana or Arial, or Helvetica (all of them - 
+						sans-serif fonts);</li>
+						<li>All hypherlinks are clored as #02B9E5 and have underlines removed;</li>
+						<li>Some elements have a problem with vertical stretching, since all their children are "floating". 
+						The "clear fix" solution from http://perishablepress.com/new-clearfix-hack/ is advised. Necessary 
+						markup is already done in HTML</li>
+					</ul>
+					<h3>Layout (general structure)</h3>
+					<ul>
+						<li>BODY and HTML elements have no padding or margin</li>
+						<li>Main content is located in element with ID "content". Its width is 1000px, it is 
+						centered (http://help.veign.com/css-center-webpage.php) and it has black background</li>
+						<li>Three content columns in the main part are all marked up with a class "column". 
+						They are then positioned using "float columns" method: http://www.ozzu.com/html-tutorials/tutorial-multi-column-layout-using-css-float-part-t85704.html</li>
+						<li>The three columns have a set width (#intro - 230px, #main - 502px, #ads - 260px, 
+						respectively), the first two of them have a padding to the right side: 4px. </li>
+						<li>All of the columns have background color #222;
+					</ul>
+					<h3>Information blocks</h3>
+					<ul>
+						<li>Content inside the columns is separated into blocks. Blocks in the left column 
+						are DIV elements with a 
+						specific class "infoblock", blocks in middle section are ARTICLE elements. 
+						Such block has to have a bottom margin of 4 pixels, a black background and padding of 8px.</li>
+					</ul>
+					<h3>Top navigation menu</h3>
+					<ul>
+						<li>Top navigation is a simple implementation of "CSS horizontal menus" as described in 
+						http://www.secondpicture.com/tutorials/web_design/css_ul_li_horizontal_css_menu.html</li>
+						<li>The menu is found in the UL element with ID "mainmenu". Its padding and margin is 
+						removed. It has no default bullets or numbering.</li>
+						<li>All list items in navigation menu are explicitly Tahoma (or similar) font. These 
+						list items have padding top and bottom padding of 5px, left padding 10px and right 
+						padding 20px;</li>
+						<li>Downward arrow is created by "background bullet" technique (http://css.maxdesign.com.au/listutorial/11.htm). 
+						The bullet is taken from http://www.usanetwork.com/_img/globalheader/menuDownArrow.png</li>
+					</ul>
+					<h3>Link lists</h3>
+					<ul>
+						<li>There are two lists containing hypherlinks to other pages. These are both marked 
+						up with "linklist" class. The bullet used for these lists can be found at 
+						http://www.usanetwork.com/series/whitecollar/images/arrow.png</li>
+					</ul>
+					<h3>Thumbnails</h3>
+					<ul>
+						<li>Portrait thumbnails are also layed out using the "float" method (the unordered 
+						list "characters" has its paddings and margins removed)</li>
+						<li>Each list item in "characters" list is floating and has 3px padding from all sides</li>
+						<li>Each image inside the caracters list is marked with a class "thumb". It is 62px 
+						wide and has no border.</li>
+					</ul>
+					<h3>Buttons</h3>
+					<ul>
+						<li>the "Play" button on the lefthand side
+							<ul>
+							<li>is 200px wide and 24px high</li>
+							<li>its background color is #02B9E5</li>
+							<li>the "play" image can be found at http://www.hylandesign.com/graphics/single_arrow_right.gif; 
+							it is placed in background (background is centered vertically and left-adjusted by 10px);</li>
+							<li>its text color is white, text is bold and 14px;</li>
+							<li>text is automatically transformed into "all caps";</li>
+							</ul>
+						<li>the "Subscribe" button on the righthand side is similar, but it has no defined 
+						width and height</li>
+					</ul>
+					<h3>Header</h3>
+					<ul>
+						<li>The huge heading "White Collar" uses a web font named "Spinnaker"  which can 
+						be found here http://www.google.com/webfonts/specimen/Spinnaker. Its text size is 
+						50px, having the line height of 60px. Its color is #B7B7B7</li>
+						<li>Header element has a 4px wide margin at the bottom</li>
+					</ul>
+					<h3>Page footer</h3>
+					<ul>
+						<li>Footer element has centered text</li>
+						<li>Footer element has 1px wide border at the top</li>
+						<li>Text size is smaller, it is 10px</li>
+					</ul>
+					<h3>Rounded corners</h3>
+					<ul>
+						<li>Several elements use CSS3 "rounded corners" (using this method: http://davidwalsh.name/css-rounded-corners)</li>
+						<li>Thumbnail images have 7px radius</li>
+						<li>Infoblocks have 3px radius</li>
+						<li>Buttons have 4px radius	</li>
+					</ul>
+				</div>
+			</article>
+			<aside>
+				<h3>LATEST POSTS</h3>
+				<p><a href="../graph.html">
+					Grapher.js</a></p>
+				<h4>20/05/2012</h4>
+				<p><a href="../blog.html">
+					White Collar</a></p>
+				<h4>01/04/2012</h4>
+				<p><a href="../blog.html">
+					Eifell Tower</a></p>
+				<h4>02/03/2012</h4>
+				<h3>NOTES</h3>
+				<p><a href="http://www.netmagazine.com/tutorials/build-responsive-site-week-designing-responsively-part-1">
+					Build a Responsive Site</a></p>
+				<h4>www.netmagazine.com</h4>
+				<p><a href="http://nicewebtype.com/notes/2012/02/03/molten-leading-or-fluid-line-height/">
+					Nice Web Type</a></p>
+				<h4>www.nicewebtype.com</h4>
+				<p><a href="http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography">
+					Five Simple Steps</a></p>
+				<h4>www.markboulton.co.uk</h4>
+				<p><a href="http://www.alistapart.com/topics/design/">
+					A LIST apart</a></p>
+				<h4>www.alistapart.com</h4>
+				<p><a href="http://coding.smashingmagazine.com/2011/03/14/technical-web-typography-guidelines-and-techniques/#tt-rhythm">
+					Technical Web Typography</a></p>
+				<h4>coding.smashingmagazine.com</h4>
+				<p><a href="http://24ways.org/2006/compose-to-a-vertical-rhythm">
+					Compose to a Vertical Rhythm</a></p>
+				<h4>www.24ways.org</h4>
+				<p><a href="http://trentwalton.com/2010/03/22/CSS3-in-transition/">
+					CSS3 In Transition</a></p>
+				<h4>www.trentwalton.com</h4>
+				<h3>FAVORITES</h3>
+				<p><a href="https://disconnect.me/">
+					Disconnect Yourself</a></p>
+				<h4>www.disconnect.me/</h4>
+				<p><a href="http://leechblock.en.softonic.com/">
+					Become More Productive</a></p>
+				<h4>www.leechblock.en.softonic.com</h4>
+			</aside>
+		</div>
+	</div>
+	<footer>
+		<ul id="footmenu">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../blog.html">Blog</a></li>
+			<li><a href="../gallery.html">Gallery</a></li>
+			<li><a href="../graph.html">Graphs</a></li>
+			<li><a href="../whoiam.html">Who?</a></li>
+			<li><a href="../contact.html">Contacts</a></li>
+			<li>
+				<div id="SocialShare2">
+					<img class="social" src="../images/facebook2.png" alt="facebook"/>
+					<img class="social" src="../images/twitter2.png" alt="twitter"/>
+					<img class="social" src="../images/google2.png" alt="google"/>
+					<img class="social" src="../images/reddit2.png" alt="reddit"/>
+				</div>
+			</li>
+		</ul>
+	</footer>
+</body>
+</html>

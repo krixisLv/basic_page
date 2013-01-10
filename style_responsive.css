@@ -1,0 +1,102 @@
+@media only screen
+and (min-width : 700px)
+{
+#content {
+	/*border:3px solid red;*/
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	width:900px;
+	height:100%;
+	margin: 0 auto;
+	position:relative;
+	top:5px;
+	left:auto;
+	right:auto;
+	font-size:16px;
+}
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 320px) {
+/* Styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-size:12px;
+}
+#head {
+	padding-top:25px;
+	height:180px;
+}
+#content {
+	/*border:3px solid red;*/
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	width:500px;
+	height:100%;
+	margin: 0 auto;
+	position:relative;
+	top:5px;
+	left:auto;
+	right:auto;
+	font-size:100%;
+}
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (min-width : 420px) {
+/* Styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-size:14px;
+}
+#head {
+	padding-top:25px;
+	height:180px;
+}
+#content {
+	/*border:3px solid red;*/
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	width:600px;
+	height:100%;
+	margin: 0 auto;
+	position:relative;
+	top:5px;
+	left:auto;
+	right:auto;
+	font-size:100%;
+}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-width : 750px)
+{
+/* Styles */
+body {
+	margin: 0;
+	padding: 0;
+	font-size:90%;
+}
+#head {
+	padding-top:25px;
+	height:180px;
+}
+#content {
+	/*border:3px solid red;*/
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	width:700px;
+	height:100%;
+	margin: 0 auto;
+	position:relative;
+	top:5px;
+	left:auto;
+	right:auto;
+	font-size:100%;
+}
+}

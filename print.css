@@ -1,0 +1,16 @@
+header, footer, aside{
+	visibility:hidden;
+}
+article{
+	position:relative;
+	top:-200px;
+	margin:0 auto;
+	max-width: 72rem;
+	width:90%;
+}
+aside{
+	width:10%;
+}
+#content{
+	width:1000px;
+}

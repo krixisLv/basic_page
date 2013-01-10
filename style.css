@@ -1,0 +1,152 @@
+@import url(http://fonts.googleapis.com/css?family=Judson:700);
+@import url(http://fonts.googleapis.com/css?family=Homenaje);
+@import url(http://fonts.googleapis.com/css?family=Quattrocento+Sans);
+body {
+	margin: 0;
+	padding: 0;
+	font-size:16px;
+}
+a:link {
+	text-decoration:none;
+	color:#118800;
+}
+a:visited {
+	text-decoration:none;
+	color:#118800;
+}
+a:hover {
+	text-decoration:underline;
+	color:#118800;
+}
+h1{
+	margin-top:15px;
+	margin-bottom:25px;
+	padding-left:20px;
+	font-family:Georgia;
+}
+h3{
+	padding:0;
+	margin-top:10px;
+}
+h4{
+	padding:0;
+	margin-bottom:3px;
+	font-style:italic;
+	font-size:90%;
+}
+p{
+	margin-bottom:20px;
+}
+#OverHead{
+	position:absolute;
+	top:0px;
+	height:7px;
+	width:100%;
+	background-color:black;
+}
+#content {
+	/*border:3px solid red;*/
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	width:900px;
+	height:100%;
+	margin: 0 auto;
+	position:relative;
+	top:5px;
+	left:auto;
+	right:auto;
+	font-size:100%;
+}
+#middle{
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	line-height:1.5;
+}
+article{
+	font-size:100%;
+	margin-top:40px;
+	margin-bottom:50px;
+	font-weight:400;
+	font-family:Arial;
+	padding:20px 60px 20px 30px;
+	width:65%;
+	min-width: 15rem;
+	max-width: 36rem;
+}
+aside{
+	width:25%;
+	margin-top:60px;
+	margin-bottom:200px;
+	padding-top:20px;
+	padding-left:20px;
+	font-size:85%;
+	border-left:1px solid #bbb;
+	font-family:Judson;
+}
+aside{
+	-webkit-transition: all 0.8s ease-in-out;
+	opacity:0.6;
+	text-decoration:none;
+	color:#888;
+}
+aside p{
+	margin-bottom:0;
+}
+aside h3{
+	color:#000;
+	font-weight:900;
+}
+aside:hover{
+	border-left:1px solid green;
+	opacity:1.1;
+	color:#bbb;
+}
+footer{
+	color:#444;
+	width:900px;
+	position:relative;
+	top:auto;
+	margin: 0 auto;
+	border-top: 1px solid #aaa;
+	height:70px;
+}
+footer>ul{
+	list-style:none;
+	position:relative;
+	top:20px;
+	margin:0 auto;
+	padding-left:120px;
+}
+#footmenu>li{
+	display:inline;
+	clear:both;
+	padding-left:8px;
+}
+#footmenu>li>a{
+	display:inline;
+	clear:both;
+	padding:5px;
+	font-family: Graduate;
+	font-size:100%;
+	font-weight:bold;
+	color:#bbb;
+	height:0;
+	text-transform:uppercase;
+	background-repeat: no-repeat;
+	background-position: 105% 50%;
+	text-decoration:none;
+	-webkit-transition: all 0.5s ease-in-out;
+}
+#footmenu>li>a:hover{
+	color:black;
+}
+.h10{
+	font-size:105%;
+	font-weight:700;
+}
+.date{
+	padding: 0;
+	margin:0;
+	color:#888;
+	font-size:80%;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Grapher</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="head.css" />
+	<script type="text/javascript" src="grapher.js"></script>
+	<link rel="stylesheet" type="text/css" href="style_graph.css" />
+	<link rel="stylesheet" type="text/css" media="print" href="print.css" />
+</head>
+<body>
+	<div id="OverHead"></div>
+	<div id="content">
+		<header id="head">
+			<div id="gears">
+				<img id="gear1" src="images/gear1.png" alt="gear"/>
+				<img id="gear2" src="images/gear2.png" alt="gear"/>
+				<img id="gear3" src="images/gear3.png" alt="gear"/>
+			</div>
+			<a href="index.html"><img id="logo" src="images/logo.png" alt="logo"/></a>
+			<nav>
+				<ul id="mainmenu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="graph.html">Graphs</a></li>
+					<li><a href="whoiam.html">Who?</a></li>
+					<li><a href="contact.html">Contacts</a></li>
+				</ul>
+			</nav>
+			<div id="SocialShare">
+				<img class="social" src="images/facebook2.png" alt="facebook"/>
+				<img class="social" src="images/twitter2.png" alt="twitter"/>
+				<img class="social" src="images/google2.png" alt="google"/>
+				<img class="social" src="images/reddit2.png" alt="reddit"/>
+				<a href="JavaScript:window.print();"><img class="social" src="images/print.png" alt="printer"></a>
+			</div>
+		</header>
+		<div id="middle">
+			<article>
+				<h1>Draw your graph on canvas!</h1>
+				<section>
+					<canvas id="graph" width="600" height="400">
+						Sorry, your browser does not support CANVAS.
+					</canvas>
+				</section>
+				<section id="input">
+					<table id="userdata">
+						<tr id="titles">
+							<th>Legend title</th>
+							<td><input type="text" id="label1" tabindex="1"/></td>
+							<td><input type="text" id="label2" tabindex="3"/></td>
+							<td><input type="text" id="label3" tabindex="5"/></td>
+							<td><input type="text" id="label4" tabindex="7"/></td>
+							<td><input type="text" id="label5" tabindex="9" /></td>	
+						</tr>
+						<tr id="values">
+							<th>Value</th>
+							<td><input type="text" id="value1" tabindex="2"/></td>
+							<td><input type="text" id="value2" tabindex="4"/></td>
+							<td><input type="text" id="value3" tabindex="6"/></td>
+							<td><input type="text" id="value4" tabindex="7"/></td>
+							<td><input type="text" id="value5" tabindex="10"/></td>	
+						</tr>
+					</table>
+					<button id="runCommand" tabindex="11" class="grey">DRAW</button>
+					<input id="drag" type="range" value="0" name="points" min="1" max="100" title="Drag&Draw" />
+					<div id="value"></div>
+					<div id="fun" title="Drag&Draw" >FUN DRAWING</div>
+				</section>
+			</article>
+			<aside>
+				<h3>LATEST POSTS</h3>
+				<p><a href="graph.html">
+					Grapher.js</a></p>
+				<h4>20/05/2012</h4>
+				<p><a href="blog.html">
+					White Collar</a></p>
+				<h4>01/04/2012</h4>
+				<p><a href="blog.html">
+					Eifell Tower</a></p>
+				<h4>02/03/2012</h4>
+				<h3>NOTES</h3>
+				<p><a href="http://www.netmagazine.com/tutorials/build-responsive-site-week-designing-responsively-part-1">
+					Build a Responsive Site</a></p>
+				<h4>www.netmagazine.com</h4>
+				<p><a href="http://nicewebtype.com/notes/2012/02/03/molten-leading-or-fluid-line-height/">
+					Nice Web Type</a></p>
+				<h4>www.nicewebtype.com</h4>
+				<p><a href="http://www.markboulton.co.uk/journal/comments/five-simple-steps-to-better-typography">
+					Five Simple Steps</a></p>
+				<h4>www.markboulton.co.uk</h4>
+				<p><a href="http://www.alistapart.com/topics/design/">
+					A LIST apart</a></p>
+				<h4>www.alistapart.com</h4>
+				<p><a href="http://coding.smashingmagazine.com/2011/03/14/technical-web-typography-guidelines-and-techniques/#tt-rhythm">
+					Technical Web Typography</a></p>
+				<h4>coding.smashingmagazine.com</h4>
+				<p><a href="http://24ways.org/2006/compose-to-a-vertical-rhythm">
+					Compose to a Vertical Rhythm</a></p>
+				<h4>www.24ways.org</h4>
+				<p><a href="http://trentwalton.com/2010/03/22/CSS3-in-transition/">
+					CSS3 In Transition</a></p>
+				<h4>www.trentwalton.com</h4>
+				<h3>FAVORITES</h3>
+				<p><a href="https://disconnect.me/">
+					Disconnect Yourself</a></p>
+				<h4>www.disconnect.me/</h4>
+				<p><a href="http://leechblock.en.softonic.com/">
+					Become More Productive</a></p>
+				<h4>www.leechblock.en.softonic.com</h4>
+			</aside>
+		</div>
+	</div>
+	<footer>
+		<ul id="footmenu">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="graph.html">Graphs</a></li>
+			<li><a href="whoiam.html">Who?</a></li>
+			<li><a href="contact.html">Contacts</a></li>
+			<li>
+				<div id="SocialShare2">
+					<img class="social" src="images/facebook2.png" alt="facebook"/>
+					<img class="social" src="images/twitter2.png" alt="twitter"/>
+					<img class="social" src="images/google2.png" alt="google"/>
+					<img class="social" src="images/reddit2.png" alt="reddit"/>
+				</div>
+			</li>
+		</ul>
+	</footer>
+</body>
+</html>

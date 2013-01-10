@@ -1,0 +1,25 @@
+.post{
+	border: 1px solid #ddd;
+	padding:10px;
+	margin-bottom:15px;
+}
+.post:hover{
+	border: 1px solid #222;
+	padding:10px;
+	margin-bottom:15px;
+}
+.postPic{
+	display:block;
+	float:left;
+	clear:both;
+	max-width:200px;
+	margin-right:20px;
+}
+h2{
+	padding-left:15px;
+	margin-bottom:10px;
+}
+#middle article>a{
+	text-decoration:none;
+	color:#000;
+}
